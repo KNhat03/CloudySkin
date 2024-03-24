@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cloudy Skin</title>
+</head>
+<link rel="stylesheet" type="text/css" href="TieuLuan.css" />
+<link rel="stylesheet" href="bootstrap.css">
+<script src="bootstrap.js"></script>
+
+<body>
+    <div id="khung">
+        <a href="TieuLuan.html">
+            <div id="header">
+                <img src="image/logotron.jpg" style="width: 5%; float:left ; margin: 2px 25px auto; border-radius: 50%;"/>
+                <b style="position: absolute;font-size: 65px; left: 35%; margin: 0 auto;Color: rgba(137, 19, 19, 0.936); font-family: Century; font-weight: bold;">CLOUDY SKIN</b>
+                <div id="lienhe">
+                    <a href="login.html" title="đăng nhập"><img src="image/dangki2.jpg"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100013567502429" target="_blank" title="facebook"><img src="image/facebook.png"></a>
+                    <a href="https://twitter.com/" target="_blank" title="twitter"><img src="image/twitter.jpg"></a>
+                    <a href="https://gmail.com/" target="_blank" title="gmail"><img src="image/gmail.jpg"></a>
+                </div>
+            </div>
+        </a>
+
+        <div id="quangcao">
+            <table>
+                <tr>
+
+                    <img name="slide" src="image/Banner.png">
+                </tr>
+                <tr>
+                    <video controls loop autoplay preload="metadata">
+				<source src="image/1.1.mov" type="Video/MP4">
+				</video>
+                </tr>
+            </table>
+        </div>
+
+        <div id="menu">
+            <ul class="nav nav-tab btn-lg" style="font-weight: bold;">
+                <li class="nav-item" style="margin-right: 20px;">
+                    <a class="nav-link btn-outline-light" role="button" href="TieuLuan.html" style="Color: rgba(137, 19, 19, 0.936);">Home</a>
+                </li>
+                <li class="nav-item" style="margin-right: 20px;">
+                    <a class="nav-link btn-outline-light" role="button" href="" style="Color:rgba(137, 19, 19, 0.936);">Introduce</a>
+                </li>
+                <li class="nav-item dropdown" style="margin-right: 20px;">
+                    <a class="nav-link btn-outline-light" role="button" href="" style="Color: rgba(137, 19, 19, 0.936)">Product</a>
+                </li>
+                <li class="nav-item" style="margin-right: 20px;">
+                    <a class="nav-link btn-outline-light" role="button" href="" Style="Color: rgba(137, 19, 19, 0.936)">BLOG</a>
+                </li>
+                <li class="nav-item dropdown" style="margin-right: 20px;">
+                    <a class="nav-link dropdown-toggle btn-outline-light" role="button" data-toggle="dropdown" style="Color: rgba(137, 19, 19, 0.936);">Policy</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="" target="_blank" style="Color:rgba(137, 19, 19, 0.936); font-weight: bold;">Warrant Policy</a></li>
+                        <li><a class="dropdown-item" href="" target="_blank" style="Color:rgba(137, 19, 19, 0.936); font-weight: bold;">Return Policy</a></li>
+                    </ul>
+                </li>
+                <form><input type="text" name="search" style="width: 300px; margin-left: 450px; margin-top: 4px;" placeholder="Search.."></form>
+                <a href="https://www.google.com/" target="_blank"><img src="image/search.png" style="width: 50px; height: 35px;border: solid 1px black; margin-top: 4px"></a>
+            </ul>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+        <div id="sanpham">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="image/Summer.jpg">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="image/Valnetine.jpg">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                   <img src="image/Chirstmas.jpg">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                <br>
+
+                <div>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+
+
+            <script>
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {
+                        slideIndex = 1
+                    }
+                    if (n < 1) {
+                        slideIndex = slides.length
+                    }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                }
+            </script>
+        </div>
+
+        <h1 style="width: 1450px; height: 80px; margin-bottom: 10px; background-color:rgb(232, 168, 179);"></h1>
+
+        <div id="content">
+            <table cellspacing="0px" cellpadding="0">
+                <h1 style="text-align: Center; Color: black; font-weight: bold; font-family: Century;">SALES, PAYMENT AND RETURN POLICY</h1>
+                <h2 style="font-weight: bold;">1. Purchasing guide</h2>
+                <h2>Customers can choose one of the following two ways:</h2>
+                <h2><h style="font-weight: bold;">The first way: </h>Call Hotline 0961359058 and we will advise and support customers with all information about products and services,</h2>
+                <h2><h style="font-weight: bold;">Second way:</h> Order via website:</h2>
+                <h2>•	Step 1: Click the "buy" button to put the product in the shopping cart after selecting the product you want to buy.</h2>
+                <h2>•	Step 2: After choosing the product to order, fill in the information as requested by us: Full name, address, phone, email.</h2>
+                <h2>•	Step 3: Click the "Confirm order" button</h2>
+                <h2>Your order has been completed and shipped to us. We will contact you to complete the transaction and proceed with shipping.</h2>
+                <h2 style="font-weight: bold;">2. Payment instructions</h2>
+            </table>
+        </div>
+        <div id="thongtin">
+            <table>
+                <td>
+                    <ul>
+                        <b>Customer consulting center</b>
+                        <p><b>Hotline</b>: 1900 1010</p>
+                        <p><b>Purchase support</b>: 1900 1012</p>
+                        <p><b>Phone</b>: 083 535 3484</p>
+                        <p></p></br>
+                    </ul>
+                </td>
+                <td>
+                    <ul style="margin-left: 200px; float: right">
+                        <b>Cloudy Skin</b></br>
+                        <a href="https://www.facebook.com/profile.php?id=100024531135175" style="margin-left: 20px; color: black; text-decoration: none;">Founder: Trần Lê Phương Thảo</p>
+                        <a href="https://www.facebook.com/profile.php?id=100013567502429" style="margin-left: 20px; color: black; text-decoration: none;">CEO: Nguyễn Quỳnh Trang</p>
+                        <a href="https://www.facebook.com/profile.php?id=100007029468403" style="margin-left: 20px; color: black; text-decoration: none;">Code by: Ôn Gia Khải Nhật</p></br>
+                    </ul>
+                </td>
+                <td>
+                    <ul style="margin-left: 300px">
+                        <b>Feedback</b>
+                        <p><b>Hotline</b>: 1900 1013</p>
+                        <p></p></br>
+                        <p></p></br>
+                        <p></p></br>
+                    </ul>
+                </td>
+            </table>
+        </div>
+
+        <div id="footer">
+            <p style="padding-top: 5px">Cloudy Skin<br> UEF University <br> Email: toidaidot@gmail.com | Phone: 0377892257 - Ext 454611 <br> </p>
+        </div>
+    </div>
+</body>
+
+</html>
